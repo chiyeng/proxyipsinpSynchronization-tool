@@ -108,7 +108,7 @@ def main():
     target_domain = os.environ.get("CF_TARGET_DOMAIN")
     cf_email = os.environ.get("CF_EMAIL")
     check_api_url = "https://proxyipsinp.xxxxxxx.nyc.mn/check"
-    sync_count = int(os.environ.get("SYNC_COUNT", 10))
+    sync_count = int(os.environ.get("SYNC_COUNT", 5))
     scan_count = int(os.environ.get("SCAN_COUNT", 1000))
     
     if not all([api_token, zone_id, target_domain, cf_email]):
